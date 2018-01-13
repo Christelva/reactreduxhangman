@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
-import './Title.csss'
+import './Title.css'
 
 class Title extends PureComponent {
   render() {

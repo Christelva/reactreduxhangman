@@ -1,32 +1,26 @@
-import SecretWord from './SecretWord'
+import secretWord from './secretWord'
+import React, { Component } from 'react'
+import WordItem from './WordItem'
 
-class WordsList extends PureComponent {
-  renderWord(word, index) {
-    return <SecretWord key={index} { ...word } />
+class WordsList extends Component {
+  render () {
+    let wordItem;
+    if(this.props.words){
+      var wordItems = this.props.words.map(word => {
+
+      return (
+        <WordItem key={word.word} word={word} />
+      );
+    });
+
+    }
+    return(
+      <div className="WordsList">
+      {wordItems}
+      </div>
+    );
   }
 }
 
-const Words = [
-  {
-    word: 'accomodate'
-  },
-  {
-    word: 'handkerchief'
-  },
-  {
-    word: 'rhythm'
-  },
-  {
-    word: 'embarass'
-  },
-  {
-    word: 'pronunciation'
-  },
-  {
-    word: 'alpaca'
-  }
-
-
-]
 
 export default WordsList
