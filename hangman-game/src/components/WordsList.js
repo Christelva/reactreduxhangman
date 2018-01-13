@@ -3,7 +3,35 @@ import React, { Component } from 'react'
 import WordItem from './WordItem'
 
 class WordsList extends Component {
-  render () {
+
+    componentWillMount(){
+      this.setState({words: [
+        {
+          word: 'accomodate'
+        },
+        {
+          word: 'handkerchief'
+        },
+        {
+          word: 'rhythm'
+        },
+        {
+          word: 'embarass'
+        },
+        {
+          word: 'pronunciation'
+        },
+        {
+          word: 'alpaca'
+        }
+
+
+      ]});
+
+    }
+  render (
+
+  ) {
     let wordItem;
     if(this.props.words){
       var wordItems = this.props.words.map(word => {
