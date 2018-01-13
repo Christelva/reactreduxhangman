@@ -1,0 +1,1 @@
+import WordList from './WordsList'
