@@ -9,6 +9,7 @@ class App extends Component {
     super();
     this.state = {
       words: []
+
     }
   }
 
@@ -37,6 +38,7 @@ class App extends Component {
     ]});
 
   }
+
   render() {
     return (
 

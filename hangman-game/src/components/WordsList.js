@@ -44,8 +44,9 @@ class WordsList extends Component {
     }
     return(
       <div className="WordsList">
-      {wordItems}
+      {wordItems[Math.floor(Math.random()*wordItems.length)]}
       </div>
+
     );
   }
 }
